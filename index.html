@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Vaishnavi Sankaran — AI, computer vision, machine learning and software projects.">
+<title>Vaishnavi Sankaran | AI & Design Portfolio</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a30;--panel2:#17223c;--text:#eef3ff;--muted:#a8b5d1;--line:#293653;--accent:#8b9cff;--accent2:#58e0c1;--pink:#f3a4d2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#202c58 0,transparent 35%),radial-gradient(ellipse at 90% 20%,#183b45 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid #ffffff16}.brand{font-weight:800;letter-spacing:.3px}.brand span{color:var(--accent2)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:white}
+.hero{padding:82px 0 66px;display:grid;grid-template-columns:1.5fr .8fr;gap:35px;align-items:center}.eyebrow{color:var(--accent2);text-transform:uppercase;letter-spacing:2px;font-size:.76rem;font-weight:800}.hero h1{font-size:clamp(2.7rem,7vw,5rem);line-height:1.02;letter-spacing:-2.5px;margin:14px 0 22px}.hero h1 span{background:linear-gradient(100deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:1.1rem;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 17px;border-radius:12px;font-weight:750;border:1px solid var(--line);display:inline-flex;gap:9px;align-items:center}.btn.primary{background:linear-gradient(110deg,var(--accent),var(--accent2));color:#07111b;border:0}.btn:hover{transform:translateY(-2px)}.profile-card{background:linear-gradient(150deg,#1c2949dd,#11182cdd);border:1px solid #ffffff1c;padding:25px;border-radius:24px;box-shadow:0 25px 70px #0003}.orb{height:150px;width:150px;border-radius:50%;margin:0 auto 20px;background:linear-gradient(140deg,var(--accent),var(--accent2),var(--pink));display:grid;place-items:center;color:#0b1020;font-size:3.2rem;font-weight:900;box-shadow:0 0 55px #8b9cff38}.profile-card h2{text-align:center;margin:8px 0 2px;font-size:1.3rem}.profile-card .sub{text-align:center;color:var(--muted);font-size:.9rem}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}.stat{padding:13px;background:#ffffff08;border:1px solid #ffffff12;border-radius:13px}.stat b{display:block;font-size:1.2rem}.stat small{color:var(--muted)}
+section{padding:38px 0 24px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}.section-head h2{font-size:2rem;margin:0;letter-spacing:-.8px}.section-head p{color:var(--muted);margin:0;max-width:520px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,#141e35,#10172a);border:1px solid #ffffff17;border-radius:18px;padding:22px;transition:.2s}.card:hover{border-color:#8b9cff88;transform:translateY(-3px)}.card-top{display:flex;justify-content:space-between;align-items:start;gap:12px}.icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#8b9cff1a;border:1px solid #8b9cff35;font-size:1.2rem}.tag{font-size:.73rem;color:var(--accent2);border:1px solid #58e0c14a;background:#58e0c10c;padding:5px 9px;border-radius:99px;white-space:nowrap}.card h3{margin:17px 0 8px;font-size:1.15rem}.card p{color:var(--muted);margin:0;font-size:.94rem}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}.chips span{font-size:.75rem;color:#d4def5;background:#ffffff0a;border:1px solid #ffffff12;border-radius:7px;padding:4px 8px}
+.timeline{display:grid;gap:15px}.experience{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:22px;border:1px solid #ffffff17;background:#141e35;border-radius:18px}.date{color:var(--accent2);font-size:.85rem;font-weight:800}.experience h3{margin:0 0 4px}.experience .org{color:var(--muted);font-size:.9rem}.experience p{color:var(--muted);margin:12px 0 0}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 14px;border-radius:12px;border:1px solid #ffffff1b;background:#ffffff08;color:#dce5ff;font-size:.9rem}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:15px}.edu{padding:20px;border:1px solid #ffffff17;border-radius:16px;background:#141e35}.edu h3{margin:0 0 6px}.edu p{color:var(--muted);margin:0}.contact{padding:28px;border-radius:22px;background:linear-gradient(110deg,#202d53,#143b43);border:1px solid #ffffff20;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h2{margin:0 0 8px}.contact p{color:#c3cee6;margin:0}.contact-links{display:flex;flex-wrap:wrap;gap:10px}.contact-links a{background:#07111b66;border:1px solid #ffffff2b;padding:10px 13px;border-radius:10px;font-size:.9rem}
+footer{padding:35px 0 25px;color:#8390ac;font-size:.82rem;text-align:center}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:55px}.profile-card{max-width:420px}.navlinks{gap:12px;font-size:.8rem}.grid,.education{grid-template-columns:1fr}.experience{grid-template-columns:1fr;gap:5px}.contact{align-items:start;flex-direction:column}.section-head{display:block}.section-head p{margin-top:7px}.hero h1{letter-spacing:-1.5px}}
+@media(max-width:480px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.hero h1{font-size:2.8rem}.card{padding:18px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <a class="brand" href="#home">VS<span>.</span></a>
+  <nav class="navlinks" aria-label="Main navigation">
+    <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main>
+<section class="wrap hero" id="home">
+  <div>
+    <div class="eyebrow">AI · Computer Vision · Product-minded Design</div>
+    <h1>Building useful ideas with <span>AI & technology.</span></h1>
+    <p>Hi, I’m Vaishnavi Sankaran, a Computer Science and Engineering student at SRM Institute of Science and Technology. I enjoy building practical AI/ML applications and user-facing software that turn complex tasks into clear, approachable experiences.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">Explore my work ↘</a>
+      <a class="btn" href="mailto:vaishnavisankaran0206@gmail.com">Contact me ↗</a>
+    </div>
+  </div>
+  <aside class="profile-card">
+    <div class="orb">VS</div>
+    <h2>Vaishnavi Sankaran</h2>
+    <div class="sub">B.Tech CSE · SRMIST KTR · Class of 2027</div>
+    <div class="stats">
+      <div class="stat"><b>9.3/10</b><small>CGPA</small></div>
+      <div class="stat"><b>AI/ML</b><small>Focus area</small></div>
+      <div class="stat"><b>8+</b><small>Academic projects</small></div>
+      <div class="stat"><b>2026</b><small>AI Engineer internship</small></div>
+    </div>
+  </aside>
+</section>
+
+<section class="wrap" id="projects">
+  <div class="section-head"><h2>Selected projects</h2><p>A mix of AI, computer vision, application development and interactive experiences. Project descriptions are based on my academic and personal work.</p></div>
+  <div class="grid">
+    <article class="card">
+      <div class="card-top"><div class="icon">✳</div><span class="tag">AI · NLP · LLM</span></div>
+      <h3>Autonomous Useful Email Sorter</h3>
+      <p>Built during my AI Engineer internship. Uses local LLMs through LM Studio and Hugging Face models to classify, label and route emails, aiming to make email management more efficient.</p>
+      <div class="chips"><span>LM Studio</span><span>Hugging Face</span><span>LLMs</span><span>Automation</span></div>
+    </article>
+    <article class="card">
+      <div class="card-top"><div class="icon">◈</div><span class="tag">Computer Vision · NLP</span></div>
+      <h3>Skin Lesion Classification</h3>
+      <p>AI-based skin-lesion classification project combining computer-vision and language-processing approaches to explore how visual information and symptom context can support a medical prediction workflow.</p>
+      <div class="chips"><span>AI/ML</span><span>Computer Vision</span><span>NLP</span><span>Healthcare</span></div>
+    </article>
+    <article class="card">
+      <div class="card-top"><div class="icon">⌁</div><span class="tag">Computer Vision</span></div>
+      <h3>Face Detection & Blurring</h3>
+      <p>Developed an image-processing application that detects faces and blurs them to help protect identity in visual content.</p>
+      <div class="chips"><span>OpenCV</span><span>NumPy</span><span>Image Processing</span></div>
+    </article>
+    <article class="card">
+      <div class="card-top"><div class="icon">⌘</div><span class="tag">Machine Learning</span></div>
+      <h3>Heart Disease Prediction</h3>
+      <p>Machine-learning project focused on using health-related input features to estimate heart-disease risk. A learning project, not a substitute for professional medical advice.</p>
+      <div class="chips"><span>Python</span><span>Machine Learning</span><span>Data Analysis</span></div>
+    </article>
+    <article class="card">
+      <div class="card-top"><div class="icon">▦</div><span class="tag">Web · UI</span></div>
+      <h3>eCommerce Web Application</h3>
+      <p>Created a web application using Java, HTML, CSS, JavaScript and MySQL, bringing together a user interface and database-backed application logic.</p>
+      <div class="chips"><span>Java</span><span>HTML/CSS</span><span>JavaScript</span><span>MySQL</span></div>
+    </article>
+    <article class="card">
+      <div class="card-top"><div class="icon">▤</div><span class="tag">UI · Python</span></div>
+      <h3>Hotel Management System</h3>
+      <p>Desktop application built with Python and Tkinter, designed to organise common hotel-management tasks through a graphical user interface.</p>
+      <div class="chips"><span>Python</span><span>Tkinter</span><span>GUI Design</span></div>
+    </article>
+    <article class="card">
+      <div class="card-top"><div class="icon">◎</div><span class="tag">Java · Interaction</span></div>
+      <h3>Flappy Bird & SnakeGameAI</h3>
+      <p>Built interactive game projects in Java Swing, practising event-driven programming, game state, user interaction and visual feedback.</p>
+      <div class="chips"><span>Java</span><span>Swing</span><span>Interaction Design</span></div>
+    </article>
+    <article class="card">
+      <div class="card-top"><div class="icon">⌁</div><span class="tag">Embedded Systems</span></div>
+      <h3>Railway Gate Sensor</h3>
+      <p>Arduino-based sensor project exploring how hardware inputs can be used in a railway-gate safety concept.</p>
+      <div class="chips"><span>Arduino</span><span>Sensors</span><span>Prototyping</span></div>
+    </article>
+  </div>
+  <p style="color:var(--muted);font-size:.83rem;margin-top:14px">Note: Add screenshots, repository links and live demos for each project before submitting, wherever you have them. Do not claim a demo or repository is available unless you have uploaded it.</p>
+</section>
+
+<section class="wrap" id="experience">
+  <div class="section-head"><h2>Experience</h2><p>Applied AI development and practical project work.</p></div>
+  <div class="timeline">
+    <article class="experience">
+      <div class="date">01 Jun – 10 Jul 2026</div>
+      <div><h3>AI Engineer Intern</h3><div class="org">FLEX · Chennai</div><p>Designed and implemented an Autonomous Useful Email Sorter using local LLMs via LM Studio and Hugging Face AI models to intelligently filter, label and route emails, improving email-management efficiency.</p><div class="chips"><span>LLM applications</span><span>AI workflow automation</span><span>Text classification</span></div></div>
+    </article>
+  </div>
+</section>
+
+<section class="wrap" id="skills">
+  <div class="section-head"><h2>Skills & tools</h2><p>Technologies and areas covered through coursework, certificates and projects.</p></div>
+  <div class="skills">
+    <span class="skill">C</span><span class="skill">C++</span><span class="skill">Java</span><span class="skill">Python</span><span class="skill">AI / Machine Learning</span><span class="skill">NLP</span><span class="skill">Computer Vision</span><span class="skill">OpenCV</span><span class="skill">NumPy</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span><span class="skill">Node.js</span><span class="skill">MySQL</span><span class="skill">SQLite</span><span class="skill">C# / .NET</span><span class="skill">AutoCAD</span><span class="skill">Ubuntu</span>
+  </div>
+</section>
+
+<section class="wrap" id="education">
+  <div class="section-head"><h2>Education & learning</h2></div>
+  <div class="education">
+    <div class="edu"><h3>B.Tech, Computer Science & Engineering</h3><p>SRM Institute of Science and Technology, Kattankulathur · 2023–2027</p><p style="margin-top:8px;color:var(--accent2)">CGPA: 9.3/10</p></div>
+    <div class="edu"><h3>Certifications</h3><p>NPTEL Machine Learning · Cloud Computing · C++ and Python (Udemy) · C Programming (SRM eLab) · Deep Learning and Machine Learning in MATLAB · Cisco Ethical Hacking and Introduction to Cybersecurity · Oracle Certified Foundations Associate</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="contact">
+  <div class="contact">
+    <div><h2>Let’s connect.</h2><p>Open to opportunities in AI applications, design-oriented technology and software development.</p></div>
+    <div class="contact-links"><a href="mailto:vaishnavisankaran0206@gmail.com">Email me ↗</a><a href="tel:+916374603908">Call ↗</a></div>
+  </div>
+</section>
+</main>
+<footer class="wrap">© 2026 Vaishnavi Sankaran · Portfolio for AI Generalist (Design) opportunities</footer>
+</body>
+</html>
